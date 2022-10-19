@@ -1,7 +1,6 @@
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-import javax.xml.validation.Validator;
 
 public class ProcessoSeletivo{
     public static void main(String[] args) {
@@ -9,6 +8,8 @@ public class ProcessoSeletivo{
         for(String candidato: candidatos){
             entrarEmContato(candidato);
         }
+        analisarCandidato(2200);
+        selecaoCandidatos();
     }
     static void entrarEmContato(String candidato){  
         int tentativasRealizadas =1;
